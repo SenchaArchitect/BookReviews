@@ -1,0 +1,97 @@
+{
+    "type": "viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "designer|initialView": true,
+        "layout": "fit"
+    },
+    "id": "ExtBox1-ext-gen10877",
+    "designerId": "67270e91-e0ac-420b-bc00-a539b13a9ec0",
+    "cn": [
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "designer|userClassName": "MyPanel1",
+                "border": false,
+                "layout": "vbox",
+                "title": null
+            },
+            "designerId": "f76a765f-65ab-496f-8e3b-88410eac5ac2",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": [
+                            "Book Reviews"
+                        ],
+                        "itemId": "header",
+                        "layout|flex": 1,
+                        "dock": "top"
+                    },
+                    "designerId": "4cc6ead0-287d-4426-8e64-996eadfd7663",
+                    "masterInstanceId": "ExtBox1-ext-gen24110"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "sidebar",
+                        "width": 180,
+                        "layout|flex": 1,
+                        "dock": "left"
+                    },
+                    "designerId": "92de79ec-e095-49f0-8889-0c84fea1b1a1",
+                    "masterInstanceId": "ExtBox1-ext-gen13935"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "book",
+                        "layout|flex": 2
+                    },
+                    "designerId": "de7a18e8-9310-4012-8953-da1ed23942ca",
+                    "masterInstanceId": "ExtBox1-ext-gen16210"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "reviews",
+                        "layout|flex": 1
+                    },
+                    "designerId": "5c8dae4f-f235-476d-97d9-6a250728ca6b",
+                    "masterInstanceId": "ExtBox1-ext-gen11162"
+                }
+            ]
+        }
+    ]
+}

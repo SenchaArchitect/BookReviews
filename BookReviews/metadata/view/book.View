@@ -1,0 +1,114 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "middle",
+        "container|pack": "center",
+        "designer|userClassName": "book.View",
+        "designer|userAlias": "bookview",
+        "border": false,
+        "cls": "item-ct",
+        "height": null,
+        "width": null,
+        "autoScroll": true,
+        "layout": "hbox",
+        "title": null
+    },
+    "id": "ExtBox1-ext-gen16210",
+    "designerId": "cecb5afc-6da0-4cb0-ae1c-5e201d327b6a",
+    "cn": [
+        {
+            "type": "image",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyImg",
+                "height": 201,
+                "itemId": "imgCt",
+                "margin": "0 10 0 0",
+                "width": 201,
+                "src": null
+            },
+            "designerId": "537f62f8-384a-400e-9c08-6bb8cc8b9ec1"
+        },
+        {
+            "type": "component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyComponent",
+                "border": false,
+                "height": null,
+                "itemId": "contentCt",
+                "width": 500
+            },
+            "designerId": "acb41e71-666d-4abb-a826-18249d37156b",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<div class=\"name\">{name} <span>${price}</span></div>",
+                            "<div class=\"author\">By {author}</div>",
+                            "<div class=\"detail\">{detail}</div>"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "379f5b59-5958-4463-92dc-02b5e2ee764f"
+                },
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": 0.9692601894494146,
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "5a529c50-3dfe-42d2-8f12-f3e243a8ee83"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "bind",
+                "fn": "bind",
+                "designer|params": [
+                    "record"
+                ],
+                "implHandler": [
+                    "        this.child('#imgCt').setSrc(record.get('image'));",
+                    "        this.child('#contentCt').update(record.data);"
+                ]
+            },
+            "designerId": "9f5dccbb-f08a-4017-b611-a56522d05bbf"
+        }
+    ]
+}

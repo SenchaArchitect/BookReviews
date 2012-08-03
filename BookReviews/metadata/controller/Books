@@ -1,0 +1,162 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Books",
+        "models": [
+            "Book",
+            "Review"
+        ],
+        "stores": [
+            "Books",
+            "Reviews"
+        ],
+        "views": [
+            "Main",
+            "book.SideBar",
+            "book.View",
+            "review.List",
+            "Header"
+        ]
+    },
+    "id": "ExtBox1-ext-gen7786",
+    "designerId": "9ac155f2-5756-4216-b94b-68b2cb097dd7",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "bookSideBar",
+                "ref": "bookSideBar",
+                "selector": "booksidebar"
+            },
+            "designerId": "01175ff9-04bb-44af-83b7-afae6779657a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "bookView",
+                "ref": "bookView",
+                "selector": "bookview"
+            },
+            "designerId": "e0a4fd7d-5909-49ea-a611-b93ce9303e3c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "reviewList",
+                "ref": "reviewList",
+                "selector": "reviewlist"
+            },
+            "designerId": "c2fc93a9-58ae-4f4e-bafc-1c1b08d48379"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onDataviewSelectionChange",
+                "fn": "onDataviewSelectionChange",
+                "implHandler": [
+                    "        if (selections.length) {",
+                    "            this.showBook(selections[0]);",
+                    "        }"
+                ],
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.view.View",
+                "designer|controlQuery": "booksidebar"
+            },
+            "designerId": "098f23eb-c46d-4804-a5d5-f4520003b5b9"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "showBook",
+                "fn": "showBook",
+                "designer|params": [
+                    "record"
+                ],
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "me.getBookView().bind(record);",
+                    "me.getReviewList().bind(record, me.getReviewsStore());"
+                ]
+            },
+            "designerId": "ae7c764c-e275-4bf6-b57c-c35dabaf0b77"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBooksStoreLoad",
+                "fn": "onBooksStoreLoad",
+                "designer|params": [
+                    "store",
+                    "records"
+                ],
+                "implHandler": [
+                    "Ext.defer(function() {",
+                    "    if (records.length) {",
+                    "        this.getBookSideBar().getSelectionModel().select(records[0]);",
+                    "    }",
+                    "}, 500, this);"
+                ]
+            },
+            "designerId": "9d762183-0971-4c7f-aa47-8bda0467185e"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "this.getBooksStore().on({",
+                    "    scope: this,",
+                    "    load : this.onBooksStoreLoad",
+                    "});"
+                ]
+            },
+            "designerId": "63f3e392-4e0f-43c8-bf05-7d40f1a7a0c5"
+        }
+    ]
+}

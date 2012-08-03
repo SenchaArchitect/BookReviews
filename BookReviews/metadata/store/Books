@@ -1,0 +1,45 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Books",
+        "autoLoad": true,
+        "storeId": "Books",
+        "model": "Book"
+    },
+    "id": "ExtBox1-ext-gen5976",
+    "designerId": "77a4c512-50f1-4cf7-9c36-ab7cc8defed8",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "resources/json/products.json"
+            },
+            "designerId": "f858ed19-277c-4c51-91a4-a6bba6c4bfd5",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "aea13381-bad1-44ce-84c8-f0e06ba83a97"
+                }
+            ]
+        }
+    ]
+}

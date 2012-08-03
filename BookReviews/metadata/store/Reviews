@@ -1,0 +1,15 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Reviews",
+        "storeId": "Reviews",
+        "model": "Review"
+    },
+    "id": "ExtBox1-ext-gen17809",
+    "designerId": "2edfb51c-fb8b-4b7d-b2e7-eaf9fe55856d"
+}

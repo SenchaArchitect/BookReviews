@@ -1,0 +1,17 @@
+{
+    "type": "component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Header",
+        "designer|userAlias": "header",
+        "baseCls": "app-header",
+        "height": null,
+        "width": null
+    },
+    "id": "ExtBox1-ext-gen24110",
+    "designerId": "d0785e18-4308-4cc9-88ab-d5151bd7f7eb"
+}

@@ -1,0 +1,117 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "review.List",
+        "designer|userAlias": "reviewlist",
+        "border": false,
+        "height": null,
+        "width": null,
+        "layout": "card",
+        "title": null
+    },
+    "id": "ExtBox1-ext-gen11162",
+    "designerId": "6f5b457d-8052-4e9b-9ea2-16cd49a03283",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": [
+                    "Reviews"
+                ],
+                "itemId": "header",
+                "dock": "top"
+            },
+            "designerId": "1dea7c49-6036-4366-853a-7eff95ce165e",
+            "masterInstanceId": "ExtBox1-ext-gen24110"
+        },
+        {
+            "type": "dataview",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "review.List",
+                "designer|userAlias": "reviewlist",
+                "cls": "review-list",
+                "height": null,
+                "itemId": "dataview",
+                "width": null,
+                "autoScroll": true,
+                "itemSelector": ".review",
+                "store": "Reviews"
+            },
+            "designerId": "eccc53f5-7253-4260-894d-1c732cb5b403",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<tpl for=\".\">",
+                            "<div class=\"review {[xindex === 1 ? \"first-review\" : \"\"]}\">",
+                            "<div class=\"title\">{title} ({rating} stars)</div>",
+                            "<div class=\"author\">By <span>{author}</span> - {date}</div>",
+                            "<div class=\"comment\">{comment}</div>",
+                            "</div>",
+                            "</tpl>"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "bae4ab25-4775-45e3-940d-90a22d602953"
+                },
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": 0.4720993528608233,
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "69518906-da63-41cb-9dd5-afec3a593497"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "bind",
+                "fn": "bind",
+                "designer|params": [
+                    "record",
+                    "store"
+                ],
+                "implHandler": [
+                    "store.loadData(record.data.reviews || []);",
+                    "this.child('#dataview').bindStore(store);"
+                ]
+            },
+            "designerId": "0c202f7a-697d-43f0-9846-4b7c74aba73c"
+        }
+    ]
+}

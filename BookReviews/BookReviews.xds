@@ -1,0 +1,144 @@
+{
+    "name": "BookReviews",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "codeGenFormat": "Class",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "instantiateStore": true,
+        "saveOnDeploy": false,
+        "appName": "MyApp"
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": 557,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
+    "framework": "ext40",
+    "topInstanceFileMap": {
+        "67270e91-e0ac-420b-bc00-a539b13a9ec0": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "Main"
+        },
+        "6f5b457d-8052-4e9b-9ea2-16cd49a03283": {
+            "paths": [
+                "metadata/view/review.List",
+                "app/view/override/review/List.js",
+                "app/view/review/List.js"
+            ],
+            "className": "review.List"
+        },
+        "bc640519-610b-4e92-855e-bb5c2490e91d": {
+            "paths": [
+                "metadata/view/book.SideBar",
+                "app/view/override/book/SideBar.js",
+                "app/view/book/SideBar.js"
+            ],
+            "className": "book.SideBar"
+        },
+        "cecb5afc-6da0-4cb0-ae1c-5e201d327b6a": {
+            "paths": [
+                "metadata/view/book.View",
+                "app/view/override/book/View.js",
+                "app/view/book/View.js"
+            ],
+            "className": "book.View"
+        },
+        "d0785e18-4308-4cc9-88ab-d5151bd7f7eb": {
+            "paths": [
+                "metadata/view/Header",
+                "app/view/override/Header.js",
+                "app/view/Header.js"
+            ],
+            "className": "Header"
+        },
+        "77a4c512-50f1-4cf7-9c36-ab7cc8defed8": {
+            "paths": [
+                "metadata/store/Books",
+                "app/store/override/Books.js",
+                "app/store/Books.js"
+            ],
+            "className": "Books"
+        },
+        "2edfb51c-fb8b-4b7d-b2e7-eaf9fe55856d": {
+            "paths": [
+                "metadata/store/Reviews",
+                "app/store/override/Reviews.js",
+                "app/store/Reviews.js"
+            ],
+            "className": "Reviews"
+        },
+        "9ac155f2-5756-4216-b94b-68b2cb097dd7": {
+            "paths": [
+                "metadata/controller/Books",
+                "app/controller/override/Books.js",
+                "app/controller/Books.js"
+            ],
+            "className": "Books"
+        },
+        "1e043d46-2d4b-4831-bc73-17d0a4f99006": {
+            "paths": [
+                "metadata/model/Book",
+                "app/model/override/Book.js",
+                "app/model/Book.js"
+            ],
+            "className": "Book"
+        },
+        "3752c8bd-0aa4-4096-a550-5db9e50da340": {
+            "paths": [
+                "metadata/model/Review",
+                "app/model/override/Review.js",
+                "app/model/Review.js"
+            ],
+            "className": "Review"
+        },
+        "34b8b1fa-2ee2-44cc-8a16-7fcaf37ecd93": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "7407d22e-b06c-4a90-afc5-f562a9aa1ac7": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "d0785e18-4308-4cc9-88ab-d5151bd7f7eb",
+            "bc640519-610b-4e92-855e-bb5c2490e91d",
+            "cecb5afc-6da0-4cb0-ae1c-5e201d327b6a",
+            "6f5b457d-8052-4e9b-9ea2-16cd49a03283",
+            "67270e91-e0ac-420b-bc00-a539b13a9ec0"
+        ],
+        "store": [
+            "77a4c512-50f1-4cf7-9c36-ab7cc8defed8",
+            "2edfb51c-fb8b-4b7d-b2e7-eaf9fe55856d"
+        ],
+        "controller": [
+            "9ac155f2-5756-4216-b94b-68b2cb097dd7"
+        ],
+        "model": [
+            "1e043d46-2d4b-4831-bc73-17d0a4f99006",
+            "3752c8bd-0aa4-4096-a550-5db9e50da340"
+        ],
+        "resource": [
+            "7407d22e-b06c-4a90-afc5-f562a9aa1ac7",
+            "34b8b1fa-2ee2-44cc-8a16-7fcaf37ecd93"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
