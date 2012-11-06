@@ -46,7 +46,9 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "tpl",
-                "implHandler": 0.08316014846786857,
+                "implHandler": [
+                    "0.08316014846786857"
+                ],
                 "designer|displayName": "tpl"
             },
             "designerId": "b69e8b1f-df5d-4509-9fca-f4939db3cd44"
