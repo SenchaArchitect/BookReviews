@@ -109,7 +109,7 @@
                     "store"
                 ],
                 "implHandler": [
-                    "store.loadData(record.data.reviews || []);",
+                    "store.loadData(record.getAssociatedData().reviews || []);",
                     "this.child('#dataview').bindStore(store);"
                 ]
             },

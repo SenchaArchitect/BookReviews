@@ -63,7 +63,7 @@ Ext.define('MyApp.view.review.List', {
     },
 
     bind: function(record, store) {
-        store.loadData(record.data.reviews || []);
+        store.loadData(record.getAssociatedData().reviews || []);
         this.child('#dataview').bindStore(store);
     }
 
