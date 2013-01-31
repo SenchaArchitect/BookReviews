@@ -1,5 +1,5 @@
 {
-    "type": "viewport",
+    "type": "Ext.container.Viewport",
     "reference": {
         "name": "items",
         "type": "array"
@@ -10,11 +10,10 @@
         "designer|initialView": true,
         "layout": "fit"
     },
-    "id": "ExtBox1-ext-gen10877",
     "designerId": "67270e91-e0ac-420b-bc00-a539b13a9ec0",
     "cn": [
         {
-            "type": "panel",
+            "type": "Ext.panel.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -22,8 +21,8 @@
             "codeClass": null,
             "userConfig": {
                 "container|align": "stretch",
-                "designer|userClassName": "MyPanel1",
                 "border": false,
+                "designer|userClassName": "MyPanel1",
                 "layout": "vbox",
                 "title": null
             },
@@ -45,7 +44,7 @@
                         "dock": "top"
                     },
                     "designerId": "4cc6ead0-287d-4426-8e64-996eadfd7663",
-                    "masterInstanceId": "ExtBox1-ext-gen24110"
+                    "masterInstanceId": "d0785e18-4308-4cc9-88ab-d5151bd7f7eb"
                 },
                 {
                     "type": "linkedinstance",
@@ -61,7 +60,7 @@
                         "dock": "left"
                     },
                     "designerId": "92de79ec-e095-49f0-8889-0c84fea1b1a1",
-                    "masterInstanceId": "ExtBox1-ext-gen13935"
+                    "masterInstanceId": "bc640519-610b-4e92-855e-bb5c2490e91d"
                 },
                 {
                     "type": "linkedinstance",
@@ -75,7 +74,7 @@
                         "layout|flex": 2
                     },
                     "designerId": "de7a18e8-9310-4012-8953-da1ed23942ca",
-                    "masterInstanceId": "ExtBox1-ext-gen16210"
+                    "masterInstanceId": "cecb5afc-6da0-4cb0-ae1c-5e201d327b6a"
                 },
                 {
                     "type": "linkedinstance",
@@ -89,7 +88,7 @@
                         "layout|flex": 1
                     },
                     "designerId": "5c8dae4f-f235-476d-97d9-6a250728ca6b",
-                    "masterInstanceId": "ExtBox1-ext-gen11162"
+                    "masterInstanceId": "6f5b457d-8052-4e9b-9ea2-16cd49a03283"
                 }
             ]
         }

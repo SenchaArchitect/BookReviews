@@ -1,5 +1,5 @@
 {
-    "type": "panel",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
@@ -8,21 +8,20 @@
     "userConfig": {
         "container|align": "middle",
         "container|pack": "center",
-        "designer|userClassName": "book.View",
-        "designer|userAlias": "bookview",
         "border": false,
         "cls": "item-ct",
         "height": null,
         "width": null,
+        "designer|userClassName": "book.View",
+        "designer|userAlias": "bookview",
         "autoScroll": true,
         "layout": "hbox",
         "title": null
     },
-    "id": "ExtBox1-ext-gen16210",
     "designerId": "cecb5afc-6da0-4cb0-ae1c-5e201d327b6a",
     "cn": [
         {
-            "type": "image",
+            "type": "Ext.Img",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -30,17 +29,17 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": null,
-                "designer|userClassName": "MyImg",
                 "height": 201,
                 "itemId": "imgCt",
                 "margin": "0 10 0 0",
                 "width": 201,
+                "designer|userClassName": "MyImg",
                 "src": null
             },
             "designerId": "537f62f8-384a-400e-9c08-6bb8cc8b9ec1"
         },
         {
-            "type": "component",
+            "type": "Ext.Component",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -48,16 +47,45 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": null,
-                "designer|userClassName": "MyComponent",
                 "border": false,
+                "data": [
+                    "{",
+                    "    id: 1,",
+                    "    name: \"Learning Ext JS\",",
+                    "    author: \"Shea Frederick, Colin Ramsay & Steve 'Cutter' Blades\",",
+                    "    detail: \"As more and more of our work is done through a web browser, and more businesses build web rather than desktop applications, users want web applications that look and feel like desktop applications. Ext JS is a JavaScript library that makes it (relatively) easy to create desktop-style user interfaces in a web application, including multiple windows, toolbars, drop-down menus, dialog boxes, and much more. Both Commercial and Open Source licenses are available for Ext JS.<br /><br />Ext JS has the unique advantage of being the only client-side UI library that also works as an application development library. Learning Ext JS will help you create rich, dynamic, and AJAX-enabled web applications that look good and perform beyond the expectations of your users.<br /><br />From the building blocks of the application layout, to complex dynamic Grids and Forms, this book will guide you through the basics of using Ext JS, giving you the knowledge required to create rich user experiences beyond typical web interfaces. It will also provide you with the tools you need to use AJAX, by consuming server-side data directly into the many interfaces of the Ext JS component library.\",",
+                    "    price: 38.21,",
+                    "    image: \"resources/images/books/learning-extjs.jpg\",",
+                    "    reviews: [",
+                    "        {",
+                    "            author: \"Kyle D. Wagner\",",
+                    "            rating: 4,",
+                    "            date: \"May 24, 2009\",",
+                    "            title: \"A good introduction to EXT JS\",",
+                    "            comment: \"This book is a good introduction to EXT JS. It will teach you the basics and help to get you familiar with writing code in EXT JS and learning the basic syntax. The examples are helpful and most are easy to follow. This book is an introduction because it does not go into much detail about building a complex web application but it will give you the confidence to continue researching and learning EXTJS on your own.<br /><br />I would recommend this book to anyone that has some experience in programming that is looking to start coding in EXT JS. Just dont expect it to teach you everything there is to know, it is more of a stepping stone.<br /><br />Overall, if you are just getting into EXT JS and want a good book to get you started this is the one.\"",
+                    "        },",
+                    "        {",
+                    "            author: \"James P. Stone\",",
+                    "            rating: 4,",
+                    "            date: \"September 22, 2009\",",
+                    "            title: \"Good Basic Coverage\",",
+                    "            comment: \"This book is good at teaching the basics to get you up and running quickly. In my project, I found myself needing something a bit more advanced for what I was trying to do. My project is requiring the use of DWR and this book does not cover anything related to the DwrProxy. This book also covers the 2.0 version and my project requires the use of 3.0. I also found myself referencing the ExtJs extension project for what I needed to do. I did find some areas where the 2.0 version would not work in 3.0. I would love to see a cook book for ExtJs and J2EE.\"",
+                    "        }",
+                    "    ]",
+                    "}"
+                ],
                 "height": null,
                 "itemId": "contentCt",
-                "width": 500
+                "width": 500,
+                "designer|userClassName": "MyComponent"
             },
+            "mockCfgs": [
+                "data"
+            ],
             "designerId": "acb41e71-666d-4abb-a826-18249d37156b",
             "cn": [
                 {
-                    "type": "template",
+                    "type": "Ext.XTemplate",
                     "reference": {
                         "name": "tpl",
                         "type": "object"
@@ -73,22 +101,6 @@
                         "designer|displayName": "tpl"
                     },
                     "designerId": "379f5b59-5958-4463-92dc-02b5e2ee764f"
-                },
-                {
-                    "type": "template",
-                    "reference": {
-                        "name": "tpl",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "tpl",
-                        "implHandler": [
-                            "0.9692601894494146"
-                        ],
-                        "designer|displayName": "tpl"
-                    },
-                    "designerId": "5a529c50-3dfe-42d2-8f12-f3e243a8ee83"
                 }
             ]
         },
@@ -106,8 +118,8 @@
                     "record"
                 ],
                 "implHandler": [
-                    "        this.child('#imgCt').setSrc(record.get('image'));",
-                    "        this.child('#contentCt').update(record.data);"
+                    "this.child('#imgCt').setSrc(record.get('image'));",
+                    "this.child('#contentCt').update(record.data);"
                 ]
             },
             "designerId": "9f5dccbb-f08a-4017-b611-a56522d05bbf"

@@ -1,12 +1,11 @@
 {
-    "type": "controller",
+    "type": "Ext.app.Controller",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Books",
         "models": [
             "Book",
             "Review"
@@ -21,9 +20,9 @@
             "book.View",
             "review.List",
             "Header"
-        ]
+        ],
+        "designer|userClassName": "Books"
     },
-    "id": "ExtBox1-ext-gen7786",
     "designerId": "9ac155f2-5756-4216-b94b-68b2cb097dd7",
     "cn": [
         {

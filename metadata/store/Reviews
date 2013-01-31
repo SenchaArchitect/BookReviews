@@ -1,15 +1,14 @@
 {
-    "type": "store",
+    "type": "Ext.data.Store",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Reviews",
+        "model": "Review",
         "storeId": "Reviews",
-        "model": "Review"
+        "designer|userClassName": "Reviews"
     },
-    "id": "ExtBox1-ext-gen17809",
     "designerId": "2edfb51c-fb8b-4b7d-b2e7-eaf9fe55856d"
 }
