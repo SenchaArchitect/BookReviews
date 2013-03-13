@@ -1,25 +1,24 @@
 {
-    "type": "dataview",
+    "type": "Ext.view.View",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "book.SideBar",
-        "designer|userAlias": "booksidebar",
         "border": false,
         "cls": "sidebar-list",
         "height": null,
         "width": null,
+        "designer|userClassName": "book.SideBar",
+        "designer|userAlias": "booksidebar",
         "itemSelector": ".product",
         "store": "Books"
     },
-    "id": "ExtBox1-ext-gen13935",
     "designerId": "bc640519-610b-4e92-855e-bb5c2490e91d",
     "cn": [
         {
-            "type": "template",
+            "type": "Ext.XTemplate",
             "reference": {
                 "name": "tpl",
                 "type": "object"
@@ -38,7 +37,7 @@
             "designerId": "b4cc059f-72f7-4e88-9976-4a6400eeb436"
         },
         {
-            "type": "template",
+            "type": "Ext.XTemplate",
             "reference": {
                 "name": "tpl",
                 "type": "object"
