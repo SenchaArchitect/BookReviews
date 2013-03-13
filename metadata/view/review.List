@@ -1,20 +1,19 @@
 {
-    "type": "panel",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "review.List",
-        "designer|userAlias": "reviewlist",
         "border": false,
         "height": null,
         "width": null,
+        "designer|userClassName": "review.List",
+        "designer|userAlias": "reviewlist",
         "layout": "card",
         "title": null
     },
-    "id": "ExtBox1-ext-gen11162",
     "designerId": "6f5b457d-8052-4e9b-9ea2-16cd49a03283",
     "cn": [
         {
@@ -32,30 +31,51 @@
                 "dock": "top"
             },
             "designerId": "1dea7c49-6036-4366-853a-7eff95ce165e",
-            "masterInstanceId": "ExtBox1-ext-gen24110"
+            "masterInstanceId": "d0785e18-4308-4cc9-88ab-d5151bd7f7eb"
         },
         {
-            "type": "dataview",
+            "type": "Ext.view.View",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "review.List",
-                "designer|userAlias": "reviewlist",
                 "cls": "review-list",
+                "data": [
+                    "[",
+                    "    {",
+                    "        author: \"Kyle D. Wagner\",",
+                    "        rating: 4,",
+                    "        date: \"May 24, 2009\",",
+                    "        title: \"A good introduction to EXT JS\",",
+                    "        comment: \"This book is a good introduction to EXT JS. It will teach you the basics and help to get you familiar with writing code in EXT JS and learning the basic syntax. The examples are helpful and most are easy to follow. This book is an introduction because it does not go into much detail about building a complex web application but it will give you the confidence to continue researching and learning EXTJS on your own.<br /><br />I would recommend this book to anyone that has some experience in programming that is looking to start coding in EXT JS. Just dont expect it to teach you everything there is to know, it is more of a stepping stone.<br /><br />Overall, if you are just getting into EXT JS and want a good book to get you started this is the one.\"",
+                    "    },",
+                    "    {",
+                    "        author: \"James P. Stone\",",
+                    "        rating: 4,",
+                    "        date: \"September 22, 2009\",",
+                    "        title: \"Good Basic Coverage\",",
+                    "        comment: \"This book is good at teaching the basics to get you up and running quickly. In my project, I found myself needing something a bit more advanced for what I was trying to do. My project is requiring the use of DWR and this book does not cover anything related to the DwrProxy. This book also covers the 2.0 version and my project requires the use of 3.0. I also found myself referencing the ExtJs extension project for what I needed to do. I did find some areas where the 2.0 version would not work in 3.0. I would love to see a cook book for ExtJs and J2EE.\"",
+                    "    }",
+                    "]"
+                ],
                 "height": null,
                 "itemId": "dataview",
                 "width": null,
+                "designer|userClassName": "review.List",
+                "designer|userAlias": "reviewlist",
                 "autoScroll": true,
                 "itemSelector": ".review",
                 "store": "Reviews"
             },
+            "mockCfgs": [
+                "data"
+            ],
             "designerId": "eccc53f5-7253-4260-894d-1c732cb5b403",
             "cn": [
                 {
-                    "type": "template",
+                    "type": "Ext.XTemplate",
                     "reference": {
                         "name": "tpl",
                         "type": "object"
@@ -75,22 +95,6 @@
                         "designer|displayName": "tpl"
                     },
                     "designerId": "bae4ab25-4775-45e3-940d-90a22d602953"
-                },
-                {
-                    "type": "template",
-                    "reference": {
-                        "name": "tpl",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "tpl",
-                        "implHandler": [
-                            "0.4720993528608233"
-                        ],
-                        "designer|displayName": "tpl"
-                    },
-                    "designerId": "69518906-da63-41cb-9dd5-afec3a593497"
                 }
             ]
         },
