@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Main",
         "designer|initialView": true,
+        "designer|userClassName": "Main",
         "layout": "fit"
     },
     "designerId": "67270e91-e0ac-420b-bc00-a539b13a9ec0",
@@ -20,9 +20,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "container|align": "stretch",
                 "border": false,
-                "designer|userClassName": "MyPanel1",
+                "container|align": "stretch",
                 "layout": "vbox",
                 "title": null
             },
@@ -36,12 +35,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "dock": "top",
                         "html": [
                             "Book Reviews"
                         ],
                         "itemId": "header",
-                        "layout|flex": 1,
-                        "dock": "top"
+                        "layout|flex": 1
                     },
                     "designerId": "4cc6ead0-287d-4426-8e64-996eadfd7663",
                     "masterInstanceId": "d0785e18-4308-4cc9-88ab-d5151bd7f7eb"
@@ -54,10 +53,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "dock": "left",
                         "itemId": "sidebar",
-                        "width": 180,
                         "layout|flex": 1,
-                        "dock": "left"
+                        "width": 180
                     },
                     "designerId": "92de79ec-e095-49f0-8889-0c84fea1b1a1",
                     "masterInstanceId": "bc640519-610b-4e92-855e-bb5c2490e91d"

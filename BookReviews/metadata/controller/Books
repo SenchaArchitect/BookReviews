@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Books",
         "models": [
             "Book",
             "Review"
@@ -20,8 +21,7 @@
             "book.View",
             "review.List",
             "Header"
-        ],
-        "designer|userClassName": "Books"
+        ]
     },
     "designerId": "9ac155f2-5756-4216-b94b-68b2cb097dd7",
     "cn": [
@@ -33,7 +33,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "bookSideBar",
                 "ref": "bookSideBar",
                 "selector": "booksidebar"
             },
@@ -47,7 +46,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "bookView",
                 "ref": "bookView",
                 "selector": "bookview"
             },
@@ -61,7 +59,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "reviewList",
                 "ref": "reviewList",
                 "selector": "reviewlist"
             },
@@ -75,17 +72,16 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onDataviewSelectionChange",
+                "designer|controlQuery": "booksidebar",
+                "designer|targetType": "Ext.view.View",
                 "fn": "onDataviewSelectionChange",
                 "implHandler": [
-                    "        if (selections.length) {",
-                    "            this.showBook(selections[0]);",
+                    "        if (selected.length) {",
+                    "            this.showBook(selected[0]);",
                     "        }"
                 ],
                 "name": "selectionchange",
-                "scope": "me",
-                "designer|targetType": "Ext.view.View",
-                "designer|controlQuery": "booksidebar"
+                "scope": "me"
             },
             "designerId": "098f23eb-c46d-4804-a5d5-f4520003b5b9"
         },
@@ -97,11 +93,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "showBook",
-                "fn": "showBook",
                 "designer|params": [
                     "record"
                 ],
+                "fn": "showBook",
                 "implHandler": [
                     "var me = this;",
                     "",
@@ -119,12 +114,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "onBooksStoreLoad",
-                "fn": "onBooksStoreLoad",
                 "designer|params": [
                     "store",
                     "records"
                 ],
+                "fn": "onBooksStoreLoad",
                 "implHandler": [
                     "Ext.defer(function() {",
                     "    if (records.length) {",
@@ -143,11 +137,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "init",
-                "fn": "init",
                 "designer|params": [
                     "application"
                 ],
+                "fn": "init",
                 "implHandler": [
                     "this.getBooksStore().on({",
                     "    scope: this,",

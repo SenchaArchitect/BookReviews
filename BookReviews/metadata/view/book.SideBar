@@ -8,12 +8,12 @@
     "userConfig": {
         "border": false,
         "cls": "sidebar-list",
-        "height": null,
-        "width": null,
-        "designer|userClassName": "book.SideBar",
         "designer|userAlias": "booksidebar",
+        "designer|userClassName": "book.SideBar",
+        "height": null,
         "itemSelector": ".product",
-        "store": "Books"
+        "store": "Books",
+        "width": null
     },
     "designerId": "bc640519-610b-4e92-855e-bb5c2490e91d",
     "cn": [
@@ -25,14 +25,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "tpl",
+                "designer|displayName": "tpl",
                 "implHandler": [
                     "<div class=\"sidebar-title\">Books</div>",
                     "<tpl for=\".\">",
                     "    <div class=\"product\">{name}</div>",
                     "</tpl>"
-                ],
-                "designer|displayName": "tpl"
+                ]
             },
             "designerId": "b4cc059f-72f7-4e88-9976-4a6400eeb436"
         },
@@ -44,11 +43,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "tpl",
+                "designer|displayName": "tpl",
                 "implHandler": [
                     "0.08316014846786857"
-                ],
-                "designer|displayName": "tpl"
+                ]
             },
             "designerId": "b69e8b1f-df5d-4509-9fca-f4939db3cd44"
         }

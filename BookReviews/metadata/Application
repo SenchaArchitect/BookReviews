@@ -6,11 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoCreateViewport": true,
-        "name": "MyApp",
         "controllers": [
             "Books"
-        ]
+        ],
+        "name": "MyApp"
     },
     "designerId": "application"
 }

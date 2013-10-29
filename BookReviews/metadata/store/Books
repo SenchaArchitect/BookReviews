@@ -7,9 +7,9 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
+        "designer|userClassName": "Books",
         "model": "Book",
-        "storeId": "Books",
-        "designer|userClassName": "Books"
+        "storeId": "Books"
     },
     "designerId": "77a4c512-50f1-4cf7-9c36-ab7cc8defed8",
     "cn": [
@@ -21,7 +21,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy",
                 "url": "resources/json/products.json"
             },
             "designerId": "f858ed19-277c-4c51-91a4-a6bba6c4bfd5",
@@ -33,9 +32,6 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyJsonReader"
-                    },
                     "designerId": "aea13381-bad1-44ce-84c8-f0e06ba83a97"
                 }
             ]

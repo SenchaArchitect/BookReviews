@@ -6,17 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
-        "container|align": "middle",
-        "container|pack": "center",
+        "autoScroll": true,
         "border": false,
         "cls": "item-ct",
-        "height": null,
-        "width": null,
-        "designer|userClassName": "book.View",
+        "container|align": "middle",
+        "container|pack": "center",
         "designer|userAlias": "bookview",
-        "autoScroll": true,
+        "designer|userClassName": "book.View",
+        "height": null,
         "layout": "hbox",
-        "title": null
+        "title": null,
+        "width": null
     },
     "designerId": "cecb5afc-6da0-4cb0-ae1c-5e201d327b6a",
     "cn": [
@@ -28,13 +28,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": null,
                 "height": 201,
                 "itemId": "imgCt",
+                "layout|flex": null,
                 "margin": "0 10 0 0",
-                "width": 201,
-                "designer|userClassName": "MyImg",
-                "src": null
+                "src": null,
+                "width": 201
             },
             "designerId": "537f62f8-384a-400e-9c08-6bb8cc8b9ec1"
         },
@@ -46,7 +45,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": null,
                 "border": false,
                 "data": [
                     "{",
@@ -76,8 +74,8 @@
                 ],
                 "height": null,
                 "itemId": "contentCt",
-                "width": 500,
-                "designer|userClassName": "MyComponent"
+                "layout|flex": null,
+                "width": 500
             },
             "mockCfgs": [
                 "data"
@@ -92,13 +90,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "tpl",
+                        "designer|displayName": "tpl",
                         "implHandler": [
                             "<div class=\"name\">{name} <span>${price}</span></div>",
                             "<div class=\"author\">By {author}</div>",
                             "<div class=\"detail\">{detail}</div>"
-                        ],
-                        "designer|displayName": "tpl"
+                        ]
                     },
                     "designerId": "379f5b59-5958-4463-92dc-02b5e2ee764f"
                 }
@@ -112,11 +109,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "bind",
-                "fn": "bind",
                 "designer|params": [
                     "record"
                 ],
+                "fn": "bind",
                 "implHandler": [
                     "this.child('#imgCt').setSrc(record.get('image'));",
                     "this.child('#contentCt').update(record.data);"

@@ -18,8 +18,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "product_id",
-                "designer|userClassName": "MyField6"
+                "name": "product_id"
             },
             "designerId": "2a04e50c-2a78-4839-b5be-03c579f896c2"
         },
@@ -31,8 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "author",
-                "designer|userClassName": "MyField7"
+                "name": "author"
             },
             "designerId": "f3a1f88b-5824-4dac-9652-9afdbff7b7cb"
         },
@@ -44,8 +42,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "rating",
-                "designer|userClassName": "MyField8"
+                "name": "rating"
             },
             "designerId": "390bdad4-3092-4085-bcfe-1a65fdfdd91e"
         },
@@ -57,8 +54,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "date",
-                "designer|userClassName": "MyField9"
+                "name": "date"
             },
             "designerId": "f6128c53-c624-4843-9b62-49a44abbd39e"
         },
@@ -70,8 +66,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "title",
-                "designer|userClassName": "MyField10"
+                "name": "title"
             },
             "designerId": "31bfbb73-aeaa-4a59-9c59-485c60cfe30a"
         },
@@ -83,20 +78,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "comment",
-                "designer|userClassName": "MyField11"
+                "name": "comment"
             },
             "designerId": "ed34c872-ea19-4cdd-a486-30265f12db19"
         },
         {
-            "type": "Ext.data.BelongsToAssociation",
+            "type": "Ext.data.association.BelongsTo",
             "reference": {
                 "name": "belongsTo",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyBelongsToAssociation",
                 "model": "Book"
             },
             "designerId": "b9f4d3bc-8749-42a6-9e17-85f68117e1c7"
