@@ -18,8 +18,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "MyField"
+                "name": "id"
             },
             "designerId": "69ad78db-caae-4247-98cc-641501996c21"
         },
@@ -31,8 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name",
-                "designer|userClassName": "MyField1"
+                "name": "name"
             },
             "designerId": "c5f3257c-2b32-4cb8-9253-4d853872584e"
         },
@@ -44,8 +42,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "author",
-                "designer|userClassName": "MyField2"
+                "name": "author"
             },
             "designerId": "1ad0578f-c9a6-428b-81a8-1aeec2673cf8"
         },
@@ -57,8 +54,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "detail",
-                "designer|userClassName": "MyField3"
+                "name": "detail"
             },
             "designerId": "ec6d8bdf-96b8-4dbf-8873-d5ca7bccce76"
         },
@@ -70,8 +66,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "price",
-                "designer|userClassName": "MyField4"
+                "name": "price"
             },
             "designerId": "4c079c41-9482-4e77-b73a-acfc891562c0"
         },
@@ -83,20 +78,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "image",
-                "designer|userClassName": "MyField5"
+                "name": "image"
             },
             "designerId": "e3e4b833-db20-41b8-a969-d639d774918e"
         },
         {
-            "type": "Ext.data.HasManyAssociation",
+            "type": "Ext.data.association.HasMany",
             "reference": {
                 "name": "hasMany",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyHasManyAssociation",
                 "model": "Review",
                 "name": "reviews"
             },

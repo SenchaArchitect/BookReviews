@@ -7,10 +7,10 @@
     "codeClass": null,
     "userConfig": {
         "baseCls": "app-header",
-        "height": null,
-        "width": null,
+        "designer|userAlias": "header",
         "designer|userClassName": "Header",
-        "designer|userAlias": "header"
+        "height": null,
+        "width": null
     },
     "designerId": "d0785e18-4308-4cc9-88ab-d5151bd7f7eb"
 }

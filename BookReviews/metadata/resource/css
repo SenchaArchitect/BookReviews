@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "css",
         "url": "resources/css/nested-loading.css"
     },
     "designerId": "34b8b1fa-2ee2-44cc-8a16-7fcaf37ecd93"
