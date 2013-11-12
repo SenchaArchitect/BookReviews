@@ -17,9 +17,9 @@ Ext.define('MyApp.store.Books', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'MyApp.model.Book',
         'Ext.data.proxy.Ajax',
-        'Ext.data.reader.Json',
-        'MyApp.model.Book'
+        'Ext.data.reader.Json'
     ],
 
     constructor: function(cfg) {
