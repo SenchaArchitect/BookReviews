@@ -1,10 +1,8 @@
 {
     "name": "BookReviews",
     "settings": {
-        "cmd": {
-            "license": "commercial"
-        },
-        "urlPrefix": "http://localhost/BookReviews/BookReviews",
+        "cmd": {},
+        "urlPrefix": "http://localhost/BookReviews/",
         "spacesToIndent": 4,
         "exportPath": "",
         "sdkPath": "",
@@ -24,15 +22,12 @@
                 "height": null,
                 "width": null
             }
-        },
-        "buildShouldOverwriteIndex": true,
-        "generateArchitectVersion": true,
-        "displayfield-ExtBox1-1745-inputEl": "Not Installed"
+        }
     },
-    "xdsVersion": "3.1.0",
-    "xdsBuild": 0,
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1337,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000006,
+    "upgradeVersion": 300000000003,
     "framework": "ext42",
     "viewOrderMap": {
         "view": [
