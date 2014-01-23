@@ -25,6 +25,7 @@
                 "layout": "vbox",
                 "title": null
             },
+            "name": "MyPanel",
             "designerId": "f76a765f-65ab-496f-8e3b-88410eac5ac2",
             "cn": [
                 {
@@ -42,6 +43,7 @@
                         "itemId": "header",
                         "layout|flex": 1
                     },
+                    "name": "header1",
                     "designerId": "4cc6ead0-287d-4426-8e64-996eadfd7663",
                     "masterInstanceId": "d0785e18-4308-4cc9-88ab-d5151bd7f7eb"
                 },
@@ -58,6 +60,7 @@
                         "layout|flex": 1,
                         "width": 180
                     },
+                    "name": "book.sidebar",
                     "designerId": "92de79ec-e095-49f0-8889-0c84fea1b1a1",
                     "masterInstanceId": "bc640519-610b-4e92-855e-bb5c2490e91d"
                 },
@@ -72,6 +75,7 @@
                         "itemId": "book",
                         "layout|flex": 2
                     },
+                    "name": "book.view",
                     "designerId": "de7a18e8-9310-4012-8953-da1ed23942ca",
                     "masterInstanceId": "cecb5afc-6da0-4cb0-ae1c-5e201d327b6a"
                 },
@@ -86,6 +90,7 @@
                         "itemId": "reviews",
                         "layout|flex": 1
                     },
+                    "name": "review.list",
                     "designerId": "5c8dae4f-f235-476d-97d9-6a250728ca6b",
                     "masterInstanceId": "6f5b457d-8052-4e9b-9ea2-16cd49a03283"
                 }

@@ -30,6 +30,7 @@
                 ],
                 "itemId": "header"
             },
+            "name": "header",
             "designerId": "1dea7c49-6036-4366-853a-7eff95ce165e",
             "masterInstanceId": "d0785e18-4308-4cc9-88ab-d5151bd7f7eb"
         },
@@ -67,6 +68,7 @@
                 "store": "Reviews",
                 "width": null
             },
+            "name": "MyView",
             "mockCfgs": [
                 "data"
             ],
@@ -91,6 +93,7 @@
                             "</tpl>"
                         ]
                     },
+                    "name": "tpl3",
                     "designerId": "bae4ab25-4775-45e3-940d-90a22d602953"
                 }
             ]
@@ -113,6 +116,7 @@
                     "this.child('#dataview').bindStore(store);"
                 ]
             },
+            "name": "bind",
             "designerId": "0c202f7a-697d-43f0-9846-4b7c74aba73c"
         }
     ]

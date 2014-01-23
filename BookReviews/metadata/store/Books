@@ -23,6 +23,7 @@
             "userConfig": {
                 "url": "resources/json/products.json"
             },
+            "name": "MyAjaxProxy",
             "designerId": "f858ed19-277c-4c51-91a4-a6bba6c4bfd5",
             "cn": [
                 {
@@ -32,6 +33,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
+                    "name": "MyJsonReader",
                     "designerId": "aea13381-bad1-44ce-84c8-f0e06ba83a97"
                 }
             ]

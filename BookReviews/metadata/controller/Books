@@ -36,6 +36,7 @@
                 "ref": "bookSideBar",
                 "selector": "booksidebar"
             },
+            "name": "bookSideBar",
             "designerId": "01175ff9-04bb-44af-83b7-afae6779657a"
         },
         {
@@ -49,6 +50,7 @@
                 "ref": "bookView",
                 "selector": "bookview"
             },
+            "name": "bookView",
             "designerId": "e0a4fd7d-5909-49ea-a611-b93ce9303e3c"
         },
         {
@@ -62,6 +64,7 @@
                 "ref": "reviewList",
                 "selector": "reviewlist"
             },
+            "name": "reviewList",
             "designerId": "c2fc93a9-58ae-4f4e-bafc-1c1b08d48379"
         },
         {
@@ -83,6 +86,7 @@
                 "name": "selectionchange",
                 "scope": "me"
             },
+            "name": "onDataviewSelectionChange",
             "designerId": "098f23eb-c46d-4804-a5d5-f4520003b5b9"
         },
         {
@@ -104,6 +108,7 @@
                     "me.getReviewList().bind(record, me.getReviewsStore());"
                 ]
             },
+            "name": "showBook",
             "designerId": "ae7c764c-e275-4bf6-b57c-c35dabaf0b77"
         },
         {
@@ -127,6 +132,7 @@
                     "}, 500, this);"
                 ]
             },
+            "name": "onBooksStoreLoad",
             "designerId": "9d762183-0971-4c7f-aa47-8bda0467185e"
         },
         {
@@ -148,6 +154,7 @@
                     "});"
                 ]
             },
+            "name": "init",
             "designerId": "63f3e392-4e0f-43c8-bf05-7d40f1a7a0c5"
         }
     ]

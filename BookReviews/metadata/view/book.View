@@ -35,6 +35,7 @@
                 "src": null,
                 "width": 201
             },
+            "name": "MyImg",
             "designerId": "537f62f8-384a-400e-9c08-6bb8cc8b9ec1"
         },
         {
@@ -77,6 +78,7 @@
                 "layout|flex": null,
                 "width": 500
             },
+            "name": "MyComponent",
             "mockCfgs": [
                 "data"
             ],
@@ -97,6 +99,7 @@
                             "<div class=\"detail\">{detail}</div>"
                         ]
                     },
+                    "name": "tpl2",
                     "designerId": "379f5b59-5958-4463-92dc-02b5e2ee764f"
                 }
             ]
@@ -118,6 +121,7 @@
                     "this.child('#contentCt').update(record.data);"
                 ]
             },
+            "name": "bind",
             "designerId": "9f5dccbb-f08a-4017-b611-a56522d05bbf"
         }
     ]

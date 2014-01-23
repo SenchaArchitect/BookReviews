@@ -33,6 +33,7 @@
                     "</tpl>"
                 ]
             },
+            "name": "tpl",
             "designerId": "b4cc059f-72f7-4e88-9976-4a6400eeb436"
         },
         {
@@ -48,6 +49,7 @@
                     "0.08316014846786857"
                 ]
             },
+            "name": "tpl1",
             "designerId": "b69e8b1f-df5d-4509-9fca-f4939db3cd44"
         }
     ]
